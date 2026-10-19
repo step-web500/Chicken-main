@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poultry Farm - Premium Chickens</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#f8f6f1;color:#333;line-height:1.6}
+header{background:#2e7d32;color:#fff;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+header h1{font-size:1.5rem}
+nav a{color:#fff;text-decoration:none;margin-left:1.5rem;font-weight:500}
+nav a:hover{text-decoration:underline}
+.hero{position:relative;overflow:hidden;color:#fff;text-align:center;padding:4rem 2rem}
+.hero video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.hero .hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(46,125,50,0.7);z-index:2}
+.hero h2, .hero p{position:relative;z-index:3}
+.section{padding:3rem 2rem;max-width:1200px;margin:0 auto}
+.section h2{text-align:center;font-size:2rem;margin-bottom:2rem;color:#2e7d32}
+.categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-bottom:3rem}
+.cat-card{background:#fff;border-radius:12px;padding:1.5rem;text-align:center;box-shadow:0 4px 10px rgba(0,0,0,.08);cursor:pointer;transition:.2s}
+.cat-card:hover{transform:translateY(-5px)}
+.cat-card h3{color:#2e7d32;margin-bottom:.5rem}
+.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.5rem}
+.product{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,.08);transition:.2s}
+.product:hover{transform:translateY(-5px)}
+.product img{width:100%;height:320px;object-fit:cover}
+.product .info{padding:1rem}
+.product h3{color:#2e7d32;margin-bottom:.3rem}
+.product .price{font-weight:bold;color:#e65100;margin:.5rem 0}
+.product .age{font-size:.9rem;color:#555}
+.product .desc{font-size:.9rem;margin:.5rem 0}
+.badge{display:inline-block;padding:.2rem .6rem;border-radius:12px;font-size:.8rem;font-weight:600}
+.available{background:#c8e6c9;color:#2e7d32}
+.sold{background:#ffcdd2;color:#c62828}
+footer{background:#2e7d32;color:#fff;text-align:center;padding:2rem;margin-top:3rem}
+@media(max-width:600px){.hero h2{font-size:1.8rem}nav a{margin-left:1rem;font-size:.9rem}}
+</style>
+</head>
+<body>
+<header>
+  <h1>🐔 REY GAMEFOWL</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<section class="hero" id="home">
+  <video autoplay muted loop playsinline><source src="header chicken.mp4" type="video/mp4"></video>
+  <div class="hero-overlay"></div>
+  <h2>Welcome to REY GAMEFOWL</h2>
+  <p>Premium chickens raised with care. Browse our selection of healthy, high-quality chickens for your farm or backyard.</p>
+</section>
+<section class="section" id="categories">
+  <h2>Chicken Categories</h2>
+  <div class="categories">
+    <div class="cat-card"><h3>4-Month-Old Chickens</h3><p>Young and energetic chickens, perfect for starting your flock.</p></div>
+    <div class="cat-card"><h3>5-Month-Old Chickens</h3><p>Maturing chickens with strong health and great egg-laying potential.</p></div>
+    <div class="cat-card"><h3>6-Month-Old & Older</h3><p>Fully grown chickens ready for breeding or meat production.</p></div>
+  </div>
+</section>
+<section class="section" id="products">
+  <h2>Featured Chickens</h2>
+  <div class="products">
+    <div class="product"><img src="philippines oriental.jpg" alt="Oriental"><div class="info"><h3>Oriental</h3><div class="age">Age: 6 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Sturdy Oriental game fowl with powerful build and strong presence.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines boston head.jpg" alt="Boston Head"><div class="info"><h3>Boston Head</h3><div class="age">Age: 5 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Premium game fowl breed with strong agility and health.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines talisay.jpg" alt="Talisay"><div class="info"><h3>Talisay</h3><div class="age">Age: 6 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Premium mature chicken, top quality breed.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines sweater.jpg" alt="Sweater"><div class="info"><h3>Sweater</h3><div class="age">Age: 6 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Classic Sweater bloodline, robust and active.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines kelso.jpg" alt="Kelso"><div class="info"><h3>Kelso</h3><div class="age">Age: 4 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Fast and agile Kelso breed, raised with care.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines sbr.jpg" alt="SBR"><div class="info"><h3>SBR</h3><div class="age">Age: 5 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Superior breeding line with excellent stamina.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines harold brown gray.jpg" alt="Harold Brown Gray"><div class="info"><h3>Harold Brown Gray</h3><div class="age">Age: 6 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Distinctive gray and brown plumage, top quality lineage.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines abuhin.jpg" alt="Abuhin"><div class="info"><h3>Abuhin</h3><div class="age">Age: 4 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Hardy native chicken, good for free-range farming.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines bulanting.jpg" alt="Bulanting"><div class="info"><h3>Bulanting</h3><div class="age">Age: 5 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Strong and active chicken with excellent foraging ability.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines bulik.jpg" alt="Bulik"><div class="info"><h3>Bulik</h3><div class="age">Age: 6 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Mature chicken with robust health and good temperament.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines buyogin.jpg" alt="Buyogin"><div class="info"><h3>Buyogin</h3><div class="age">Age: 4 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Healthy young chicken, ideal for growing your flock.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines gold.jpg" alt="Gold"><div class="info"><h3>Gold</h3><div class="age">Age: 5 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Beautiful golden-feathered chicken, strong and lively.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines hennie.jpg" alt="Hennie"><div class="info"><h3>Hennie</h3><div class="age">Age: 6 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Premium hen with excellent egg production.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines hiraw.jpg" alt="Hiraw"><div class="info"><h3>Hiraw</h3><div class="age">Age: 4 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Energetic young chicken, great for breeding.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines kanawayon.jpg" alt="Kanawayon"><div class="info"><h3>Kanawayon</h3><div class="age">Age: 5 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Sturdy chicken with strong immune system.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines pumpkin.jpg" alt="Pumpkin"><div class="info"><h3>Pumpkin</h3><div class="age">Age: 4 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Vibrant and healthy young chicken.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines sinibalang.jpg" alt="Sinibalang"><div class="info"><h3>Sinibalang</h3><div class="age">Age: 5 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Active chicken with excellent health.</div><span class="badge available">Available</span></div></div>
+    <div class="product"><img src="philippines rhode island.jpg" alt="Rhode Island"><div class="info"><h3>Rhode Island</h3><div class="age">Age: 5 months</div><div class="price">₱ *,*** <span style="font-size:0.85rem;font-weight:normal;color:#555;">(Price is negotiable)</span></div><div class="desc">Hardy dual-purpose breed known for reliability and steady production.</div><span class="badge available">Available</span></div></div>
+  </div>
+</section>
+<footer id="contact">
+  <p><strong>REY GAMEFOWL</strong></p>
+  <p>Email: espinosastephen32@gmail.com</p>
+  <div style="margin: 1.5rem auto; max-width: 600px; height: 300px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <iframe width="100%" height="300" frameborder="0" style="border:0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.0!2d121.0!3d14.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDU5JzUyLjIiTiAxMjDCsDAwJzAwLjAiRQ!5e0!3m2!1sen!2sph!4v1620000000000!5m2!1sen!2sph" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  <p>&copy; 2026 REY GAMEFOWL. All rights reserved.</p>
+</footer>
+</body>
+</html>
